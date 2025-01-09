@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Suporte Navblue">
+    <meta name="author" content="Navblue Team">
+    <title>Suporte - Navblue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #003b6f;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            color: #003b6f;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #003b6f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #f4f4f9;
+        }
+        footer a {
+            color: #003b6f;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Suporte Navblue</h1>
+    </header>
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <p>Caso precise de suporte, entre em contato pelo formulário abaixo ou envie um email diretamente para <strong><a href="mailto:theapp.navblue@gmail.com">theapp.navblue@gmail.com</a></strong>.</p>
+        <form action="https://formsubmit.co/theapp.navblue@gmail.com" method="POST">
+            <label for="name">Seu Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            
+            <label for="email">Seu Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Descreva seu problema ou dúvida" required></textarea>
+            
+            <!-- Anti-spam hidden field -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://github.io/seusite/thanks.html">
+
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2025 Navblue. Todos os direitos reservados.</p>
+        <p>Precisa de ajuda? Envie um email para <a href="mailto:theapp.navblue@gmail.com">theapp.navblue@gmail.com</a></p>
+    </footer>
+</body>
+</html>
